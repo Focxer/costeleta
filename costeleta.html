@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Volta Costeleta <3</title>
+  </head>
+  <style>
+    body {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgb(92, 151, 92);
+      overflow: hidden;
+      margin: 0 auto;
+      padding: 0px;
+    }
+    div {
+      height: 500px;
+      text-align: center;
+      padding: 15px 100px;
+      border-radius: 2rem;
+      background-color: rgb(219, 219, 219);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    img {
+      height: 200px;
+      width: 200px;
+      object-fit: fill;
+      border-radius: 1rem;
+      filter: drop-shadow(5px 10px 4px #0000002c);
+      margin-top: 1rem;
+      transition: all 5s;
+      filter: grayscale(100)
+    }
+    audio {
+      opacity: 0;
+    }
+  </style>
+  <body>
+    <div>
+      <h1>Volta Costeleta</h1>
+      <span>Te amamos cara <3</span>
+      <img id="imagem"
+        src="https://scontent.fcgh22-1.fna.fbcdn.net/v/t39.30808-6/293113502_5160837960659764_4515096938790600174_n.jpg?stp=cp6_dst-jpg&_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeEzbiPkdjSLGFHE0cF6qFxEVL4Y0aT_DrZUvhjRpP8Otul71W1VghRq0h9karC0l9YlRpVCAJ7LCWHUZgCV7PGE&_nc_ohc=qu54qkA8npwQ7kNvgF5ZiMk&_nc_ht=scontent.fcgh22-1.fna&oh=00_AYCr9--FHvRdGgjzswE0DMWfLh8gkBvwCH_zSIEQHZkbZA&oe=66BB342D"
+        alt=""
+        onclick="play()"
+      />
+      <span>Ass: Lil Stuart</span>
+      <audio
+        id="audio"
+        src="https://ucfaeed95a94c9a2ea0c0b2e1b7e.dl.dropboxusercontent.com/cd/0/inline/CYS92jhXtzSdbcj23ekVHuC2Cxr_cfTu3m10DAywG55R5KyltupOeuac4awV6V9Rt_J_9b7bPIRaXrqIkqBUayeiaQP9Ltatg6NCtTV4eIap8rrh-oxIuLNpu6dliwSu0E0FMHTF7qZcwPzIYX3xvTw5/file#"
+      ></audio>
+    </div>
+  </body>
+  <script>
+    function play() {
+      var audio = document.getElementById("audio");
+      audio.play();
+
+      const imagem = document.getElementById("imagem")
+      imagem.style.height = "100vh"
+      imagem.style.width = "100vw"
+      imagem.style.filter = "grayscale(0)"
+    }
+  </script>
+</html>
